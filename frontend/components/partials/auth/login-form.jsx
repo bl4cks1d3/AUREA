@@ -35,7 +35,7 @@ const LoginForm = () => {
     if (user) {
       dispatch(handleLogin(true));
       setTimeout(() => {
-        router.push("/analytics");
+        router.push("/project");
       }, 1500);
     } else {
       toast.error("Invalid credentials", {
@@ -64,8 +64,8 @@ const LoginForm = () => {
         error={errors?.email}
       />
       <Textinput
-        name="passwrod"
-        label="Senha"
+        name="password"
+        label="passwrod"
         type="password"
         defaultValue="dashcode"
         register={register}
@@ -75,7 +75,7 @@ const LoginForm = () => {
         <Checkbox
           value={checked}
           onChange={() => setChecked(!checked)}
-          label="Mantenha-me logado"
+          label="Mantenha-me conectado"
         />
         <Link
           href="/forgot-password"
