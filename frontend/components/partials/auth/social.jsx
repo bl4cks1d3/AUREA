@@ -4,36 +4,13 @@ const Social = () => {
       <ul className="flex">
         <li className="flex-1">
           <a
-            href="#"
-            className="inline-flex h-10 w-10 bg-[#1C9CEB] text-white text-2xl flex-col items-center justify-center rounded-full"
+            href="https://sso.acesso.gov.br/login?client_id=www.gov.br&authorization_id=190e517db17"
+            className="inline-flex h-50  text-white text-2xl flex-col items-center justify-center rounded-full"
           >
-            <img src="/assets/images/icon/tw.svg" alt="" />
+            <img src="/assets/images/icon/gov.svg" alt="" />
           </a>
         </li>
-        <li className="flex-1">
-          <a
-            href="#"
-            className="inline-flex h-10 w-10 bg-[#395599] text-white text-2xl flex-col items-center justify-center rounded-full"
-          >
-            <img src="/assets/images/icon/fb.svg" alt="" />
-          </a>
-        </li>
-        <li className="flex-1">
-          <a
-            href="#"
-            className="inline-flex h-10 w-10 bg-[#0A63BC] text-white text-2xl flex-col items-center justify-center rounded-full"
-          >
-            <img src="/assets/images/icon/in.svg" alt="" />
-          </a>
-        </li>
-        <li className="flex-1">
-          <a
-            href="#"
-            className="inline-flex h-10 w-10 bg-[#EA4335] text-white text-2xl flex-col items-center justify-center rounded-full"
-          >
-            <img src="/assets/images/icon/gp.svg" alt="" />
-          </a>
-        </li>
+        
       </ul>
     </>
   );

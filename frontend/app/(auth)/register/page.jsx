@@ -13,7 +13,7 @@ const Register = () => {
       <div className="loginwrapper">
         <div className="lg-inner-column">
           <div className="left-column relative z-[1]">
-            <div className="max-w-[520px] pt-20 ltr:pl-20 rtl:pr-20">
+            <div className="max-w-[300px]  ltr:pl-50 rtl:pr-10">
               <Link href="/">
                 <img
                   src={
@@ -26,14 +26,9 @@ const Register = () => {
                 />
               </Link>
 
-              <h4>
-                Unlock your Project
-                <span className="text-slate-800 dark:text-slate-400 font-bold">
-                  performance
-                </span>
-              </h4>
+        
             </div>
-            <div className="absolute left-0 bottom-[-130px] h-full w-full z-[-1]">
+            <div className="absolute left-0 2xl:bottom-[-30px] bottom-[-130px] h-full w-full z-[-1]">
               <img
                 src="/assets/images/auth/ils1.svg"
                 alt=""
@@ -58,27 +53,27 @@ const Register = () => {
                   </Link>
                 </div>
                 <div className="text-center 2xl:mb-10 mb-5">
-                  <h4 className="font-medium">Sign up</h4>
+                  <h4 className="font-medium">Cadastre-se</h4>
                   <div className="text-slate-500 dark:text-slate-400 text-base">
-                    Create an account to start using Dashcode
+                    Crie uma conta para acessar o sistema AUREA
                   </div>
                 </div>
                 <RegForm />
                 <div className=" relative border-b-[#9AA2AF] border-opacity-[16%] border-b pt-6">
                   <div className=" absolute inline-block  bg-white dark:bg-slate-800 left-1/2 top-1/2 transform -translate-x-1/2 px-4 min-w-max text-sm  text-slate-500  dark:text-slate-400font-normal ">
-                    Or continue with
+                    Ou continue com 
                   </div>
                 </div>
                 <div className="max-w-[242px] mx-auto mt-8 w-full">
                   <Social />
                 </div>
                 <div className="max-w-[225px] mx-auto font-normal text-slate-500 dark:text-slate-400 2xl:mt-12 mt-6 uppercase text-sm">
-                  Already registered?
+                  Já possui conta?
                   <Link
                     href="/login"
                     className="text-slate-900 dark:text-white font-medium hover:underline"
                   >
-                    Sign In
+                    Entre
                   </Link>
                 </div>
               </div>
