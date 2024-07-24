@@ -37,9 +37,6 @@ const ProjectPage = () => {
               </div>
             </div>
           </Card>
-          <Card title="Deal distribution by stage" headerslot={<SelectMonth />}>
-            <BasicArea height={310} />
-          </Card>
         </div>
       </div>
 
