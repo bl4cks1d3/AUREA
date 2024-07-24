@@ -45,7 +45,7 @@ const MobileMenu = ({ className = "custom-class" }) => {
             </div>
             <div>
               <h1 className="text-xl font-semibold text-slate-900 dark:text-slate-100">
-                DashCode
+                Aurea
               </h1>
             </div>
           </div>
@@ -69,23 +69,7 @@ const MobileMenu = ({ className = "custom-class" }) => {
         scrollableNodeProps={{ ref: scrollableNodeRef }}
       >
         <Navmenu menus={menuItems} />
-        <div className="bg-slate-900 mb-24 lg:mb-10 mt-24 p-4 relative text-center rounded-2xl text-white">
-          <img
-            src="/assets/images/svg/rabit.svg"
-            alt=""
-            className="mx-auto relative -mt-[73px]"
-          />
-          <div className="max-w-[160px] mx-auto mt-6">
-            <div className="widget-title">Unlimited Access</div>
-            <div className="text-xs font-light">
-              Upgrade your system to business plan
-            </div>
-          </div>
-          <div className="mt-6">
-            <button className="btn bg-white hover:bg-opacity-80 text-slate-900 btn-sm w-full block">
-              Upgrade
-            </button>
-          </div>
+        <div >
         </div>
       </SimpleBar>
     </div>
