@@ -84,7 +84,7 @@ Isso gera frustração e desmotivação, além de consumir tempo que poderia ser
 - **Amanda Almeida** - Negócios & Design (https://www.linkedin.com/in/amanda16almeida/)
 - **Bruno Lima** - Engenheiro Civil (https://www.linkedin.com/in/brunoalveslima/)
 - **Jaqueline Queroz** - Negócios (https://www.linkedin.com/in/jaquelinequeroz/)
-- **Wesley Cardoso** - Full Stack (linkedin.com/in/bl4cksidesystem/)
+- **Wesley Cardoso** - Full Stack (https://www.linkedin.com/in/bl4cksidesystem/)
 
 ## CONFEA OPEN-DAY: 1º Hackathon do Sistema Confea/Crea e Mútua
 
