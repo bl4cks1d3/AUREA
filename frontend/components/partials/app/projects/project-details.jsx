@@ -18,15 +18,10 @@ const ProjectDetailsPage = () => {
     <div className=" space-y-5">
       <div className="grid grid-cols-12 gap-5">
         <Card className="xl:col-span-3 col-span-12 lg:col-span-5 h-full">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+          <div className="grid md:grid-cols-4 grid-cols-1 gap-3">
             <GroupChart4 />
           </div>
-          <div className="bg-slate-50 dark:bg-slate-900 rounded-md p-4 mt-4">
-            <span className="block dark:text-slate-400 text-sm text-slate-600">
-              Progress
-            </span>
-            <DonutChart />
-          </div>
+
         </Card>
         {/* end single column*/}
         <Card
