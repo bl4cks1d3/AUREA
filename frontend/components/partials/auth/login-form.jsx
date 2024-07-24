@@ -64,8 +64,8 @@ const LoginForm = () => {
         error={errors?.email}
       />
       <Textinput
-        name="password"
-        label="passwrod"
+        name="passwrod"
+        label="Senha"
         type="password"
         defaultValue="dashcode"
         register={register}
@@ -75,17 +75,17 @@ const LoginForm = () => {
         <Checkbox
           value={checked}
           onChange={() => setChecked(!checked)}
-          label="Keep me signed in"
+          label="Mantenha-me logado"
         />
         <Link
           href="/forgot-password"
           className="text-sm text-slate-800 dark:text-slate-400 leading-6 font-medium"
         >
-          Forgot Password?{" "}
+          Esqueceu a senha?{" "}
         </Link>
       </div>
 
-      <button className="btn btn-dark block w-full text-center">Sign in</button>
+      <button className="btn btn-dark block w-full text-center">Entrar</button>
     </form>
   );
 };
