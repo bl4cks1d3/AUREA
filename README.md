@@ -1,8 +1,7 @@
 # AUREA - Aplicação Unificada de Registros de Engenharia e Agronomia
 
-A AUREA é uma solução inovadora que visa centralizar e simplificar a gestão de registros profissionais e a emissão de Anotações de Responsabilidade Técnica (ARTs)
-para engenheiros, agrônomos e geocientistas no Brasil. Utilizando tecnologias como blockchain e inteligência artificial, a aplicação proporciona um cadastro único 
-nacional, eliminando a necessidade de registros regionais adicionais e visto profissional. Além disso, integra os sistemas Crea e  Mútua ao sistema do CONFEA, 
+A AUREA é uma solução que visa centralizar e simplificar a gestão de registros profissionais e a emissão de Anotações de Responsabilidade Técnica (ARTs) e Certidões de Acervo Técnico (CATs) para engenheiros, agrônomos e geocientistas no Brasil. Utilizando tecnologias como blockchain e inteligência artificial, a aplicação proporciona um cadastro único 
+nacional, eliminando a necessidade de registros regionais adicionais e visto profissional. Além disso, integra os sistemas CREA e  Mútua ao sistema do CONFEA, 
 oferecendo uma plataforma unificada para todos os serviços necessários aos profissionais.
 
 ## Visão Geral
@@ -14,7 +13,7 @@ No entanto, o sistema atual apresenta diversas barreiras:
 - Registros Estaduais Separados e Vistos Adicionais: Cada profissional precisa registrar-se separadamente em cada estado onde pretende atuar, além de solicitar vistos adicionais. 
 Esse processo é burocrático e demorado, limitando a flexibilidade e a capacidade dos profissionais de se deslocarem e atuarem em diversas regiões.
 
-- Falta de Padronização:Cada CREA (Conselho Regional de Engenharia e Agronomia) possui requisitos e procedimentos diferentes para o registro e emissão de Anotações
+- Falta de Padronização: Cada CREA (Conselho Regional de Engenharia e Agronomia) possui requisitos e procedimentos diferentes para o registro e emissão de Anotações
 de Responsabilidade Técnica (ARTs). Isso dificulta a conformidade dos profissionais e gera ineficiências, pois eles precisam se adaptar a diferentes normas e regulamentos em cada estado.
 
 - Fragmentação dos Dados: Os dados dos profissionais estão dispersos em diferentes sistemas regionais, dificultando a gestão centralizada e a integração das informações. Isso impede a criação
@@ -27,56 +26,76 @@ Esses atrasos resultam na perda de oportunidades de trabalho e prejudicam a resp
 Isso gera frustração e desmotivação, além de consumir tempo que poderia ser dedicado à prática profissional e ao desenvolvimento de novos projetos.
 
 ### Principais Funcionalidades
--
--
--
+- Emissão de registro profissional único 
+- Emissão de ARTs em qualquer estado
+- Emissão de CATs com histórico atualizado de ARTs de todo país
+- Pagamento distribuído automaticamente para origem e destinos
+- Parametrização de critérios conforme resoluções 
+- Envio de propostas
+- Votações
+- Tradução de ARTs legadas com IA
+- Pré-preenchimento de ARTs com IA baseado em padrões
+
+### Benefícios
+- Agilidade na atualização de informações
+- Integração entre CONFEA, CREAs e Mútua
+- Eliminação da necessidade de vistos
+- Garantia dos pilares da Segurança da Informação
+- Proteção contra fraudes
+- Facilidade em atualização de regras conforme resoluções por meio de parâmetros
+- Agilidade na excecução das regras definidas pelos conselhos através de Smart Contracts
+- Redução do tempo de compensação dos pagamentos através da unificação
+
+
 ## Tecnologias Utilizadas
 
-### Frontend
-- 
-
-### Backend
-- **Servidor**: [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/)
-
-### Inteligência Artificial
-
-## Estrutura do Projeto
-
 - **Frontend**
-  - 
+  - Yarn
+  - Next.js
+  - React.js
+  - Tailwindcss
+
 - **Backend**
-  - Servidor gerenciado com Node.js e Express.
-- **Processamento de Linguagem Natural**
-  - Realizado via Google Colab e Dialogflow.
+  - Openzeppelin (contratos blockchain)
+  - Apollo-server
+  - Ethers
+  - Graphql
+  - NomicFoundation/Hardhat
+
+- **Processamento de Linguagem Natural** (Futuro) 
+  - Google Colab e Dialogflow
 
 ## Como Rodar o Projeto Localmente
 
 1. Clone o repositório:
     ```bash
-   https://github.com/.....
+   https://github.com/bl4cks1d3/AUREA
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd ....
+    cd AUREA
     ```
 3. Instale as dependências do frontend:
     ```bash
     cd frontend
-    npm install
+    yarn
     ```
 4. Instale as dependências do backend:
     ```bash
     cd backend
     npm install
+    npx hardhat compile
+    npx hardhat node
+    npx hardhat run scripts/deploy.js --network localhost
     ```
 5. Inicie o servidor backend:
     ```bash
-    npm start
+    node api/api.js(graph)
     ```
-    6. Inicie o servidor frontend:
+6. Inicie o servidor frontend:
     ```bash
     cd ../frontend
-    npm start
+    yarn dev
     ```
 
 ## Equipe
